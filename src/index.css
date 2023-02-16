@@ -13,22 +13,35 @@ code {
 }
 
 
+
 .App {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
 }
 
 
 .Card {
-  width:80%;
+  width: 100%;
   padding: 10px 10px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: gray;
   border-radius: 10px;
   color: #fff;
+}
+
+.cardWrapper {
+  width:80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #3a3a3a;
 }
 
 .card-item {
@@ -50,4 +63,12 @@ code {
   border: 2px solid rgb(2, 247, 255);
   gap: 10px;
   border-radius: 5px;
+  color:#fff;
+  background-color: #313131;
+}
+
+.changeINputs {
+  display: flex;
+  gap: 30px;
+  color: #fff;
 }
