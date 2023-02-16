@@ -11,9 +11,9 @@ const Items = (props) => {
   const ChangeInputsAmount = document.querySelector('#Amount');
 
   const ChangeTitle = () =>{
-    setTitle(ChangeInputsTitle.value)
-    setamount(ChangeInputsAmount.value)
-    console.log(title);
+    setTitle(ChangeInputsTitle.value);
+    setamount(ChangeInputsAmount.value);
+    console.log(ChangeInputsTitle);
   }
 
   return (
