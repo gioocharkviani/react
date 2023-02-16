@@ -72,3 +72,15 @@ code {
   gap: 30px;
   color: #fff;
 }
+
+.New-Card {
+  display: flex;
+  background-color: #776d6d;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.AddForm form {
+  display: flex;
+  gap: 20px;
+}

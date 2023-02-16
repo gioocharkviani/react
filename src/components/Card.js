@@ -1,5 +1,6 @@
 import Items from './Items';
 import ChangeInputs from './ChangeInputs';
+import NewCard from './addCard/NewCard';
 
 function Card(props){
 
@@ -33,6 +34,7 @@ function Card(props){
 
   return (
     <div className='cardWrapper'>
+            <NewCard />
             <ChangeInputs />
           <Items Title={MainData[0].Title} Ammount={MainData[0].Ammount}  Date={MainData[0].Date} />
           <Items Title={MainData[1].Title} Ammount={MainData[1].Ammount}  Date={MainData[1].Date} />
