@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import Items from './components/Items';
+
 
 function App() {
+  const MainData = [
+    {
+      id: 'A1',
+      Title : 'Mazda' ,
+      Ammount : 25323 , 
+      Date : new Date(2025,3,29)
+    } ,
+    {
+      id: 'A2',
+      Title : 'Mercedes Benz' ,
+      Ammount : 255323 , 
+      Date : new Date(2025,6,29)
+    } ,
+    {
+      id: 'A3',
+      Title : 'Bmw' ,
+      Ammount : 43323 , 
+      Date : new Date(2025,6,29)
+    },
+    {
+      id: 'A4',
+      Title : 'AUDI' ,
+      Ammount : 13323 , 
+      Date : new Date(2021,2,29)
+    }
+  ]
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Items Title={MainData[0].Title} Ammount={MainData[0].Ammount}  Date={MainData[0].Date} />
+      <Items Title={MainData[1].Title} Ammount={MainData[1].Ammount}  Date={MainData[1].Date} />
+      <Items Title={MainData[2].Title} Ammount={MainData[2].Ammount}  Date={MainData[2].Date} />
+      <Items Title={MainData[3].Title} Ammount={MainData[3].Ammount}  Date={MainData[3].Date} />
     </div>
   );
 }
